@@ -13,10 +13,10 @@
 
   <Discount v-if="showDiscount == true " />
 
-  <button @click="priceSort">가격순정렬</button>
-  <button @click="priceRverseSort">가격역순정렬</button>
+  <button class="btn-price" @click="priceSort">가격순정렬</button>
+  <button class="btn-price-revers" @click="priceRverseSort">가격역순정렬</button>
   <!-- <button @click="priceKorea">가나다순정렬</button> -->
-  <button @click="sortBack">되돌리기</button>
+  <button class="btn-back" @click="sortBack">되돌리기</button>
   <!-- 가격높은순정렬 -->
   <!-- 상품명 가나다순정렬 -->
 
@@ -140,6 +140,21 @@ body {
 .menu a {
   color: white;
   padding: 10px;
+}
+
+button {
+  margin: 10px 10px 20px;
+  background: conic-gradient(from 45deg, #5ad85a, #bdf5b8);
+  border: 0;
+  padding: 3px 10px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: wheat;
 }
 
 </style>
